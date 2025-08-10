@@ -1,0 +1,20 @@
+name: auto sign watchgeek script
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  run-daily-script:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: pull code
+        uses: actions/checkout@v4
+      - name: go check
+        run: |
+          echo "start check at $(date)"
+          python main.py
+          echo "finish!"
