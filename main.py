@@ -8,8 +8,8 @@ headers = {
 }
 url = "https://auth.watchgeek.cn/login.php"
 
-user = {'username_or_qq': '填写你的表极客账号',
-         'password': '填写你的表极客密码'
+user = {'username_or_qq': '3322073603',
+         'password': 'ccw123456'
   }
 shuchu = requests.request("POST", url, headers=headers, data=user)
 
